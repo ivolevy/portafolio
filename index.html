@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio - ivan Levy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #121212;
+            color: #fff;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            padding: 10px;
+        }
+        .grid a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #1e1e1e;
+            color: #0ff;
+            text-decoration: none;
+            font-size: 1rem;
+            padding: 20px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            flex-direction: column;
+        }
+        .grid a:hover {
+            background: #0ff;
+            color: #121212;
+        }
+        .technologies {
+            font-size: 0.8rem;
+            color: #aaa;
+            margin-top: 10px;
+        }
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.2rem;
+            }
+            .grid {
+                grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Como miembro de UO Solutions, colaboré en la creación y mantenimiento de:</h1>
+        <div class="grid">
+            <a href="https://crujinola.com" target="_blank">
+                Crujinola
+                <div class="technologies">React, CSS, Tailwind</div>
+            </a>
+            <a href="https://helenashummus.com" target="_blank">
+                Helena's Humus
+                <div class="technologies">React, CSS, Tailwind</div>
+            </a>
+            <a href="https://www.iabargentina.com.ar" target="_blank">
+                IAB
+                <div class="technologies">PHP</div>
+            </a>
+            <a href="https://interact.org.ar" target="_blank">
+                Interact
+                <div class="technologies">PHP</div>
+            </a>
+            <a href="https://www.santafe.com.co" target="_blank">
+                Ladrillera Santa Fe
+                <div class="technologies">WordPress, WooCommerce</div>
+            </a>
+            <a href="https://www.bellacenter.com.ar" target="_blank">
+                Bellacenter
+                <div class="technologies">PHP</div>
+            </a>
+            <a href="https://newenglandoildelivered.com" target="_blank">
+                New England Oil Delivered
+                <div class="technologies">WordPress, WooCommerce</div>
+            </a>
+            <a href="https://newenglandpaving.com" target="_blank">
+                New England Paving
+                <div class="technologies">WordPress, WooCommerce</div>
+            </a>
+            <a href="https://newenglandlandscapesupplyllc.com" target="_blank">
+                New England Landscape Supply
+                <div class="technologies">WordPress, WooCommerce</div>
+            </a>
+            <a href="https://premiomasdigital.com" target="_blank">
+                Premios Más Digital
+                <div class="technologies">PHP</div>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
